@@ -1,0 +1,3 @@
+<team-server-settings hostAddress="github.com" port="22"
+    protocol="git_ssh" repository="/nts/svnroot/repository_1"
+    resourcesFolderName="%resources%" thirdParty="true" tunnel=""/>

@@ -1,0 +1,14 @@
+# Project description file
+
+project.name=test_collabo
+project.version=8.4
+project.original.version=8.4
+product.name=NeoLoad
+product.original.name=NeoLoad
+product.original.version=8.1.0
+project.is-open-test-settings-after-upload=false
+project.id=47cdee05-ad07-4a95-a2f3-aceb37b2e955
+project.config.path=config.zip
+project.config.storage=ZIP
+team.server.enabled=true
+team.server.project=/guillaumebert/share-nl-projects.git
