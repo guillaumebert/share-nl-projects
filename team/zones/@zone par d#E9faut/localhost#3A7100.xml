@@ -1,40 +1,12 @@
-<me-host browserBasedSupport="false" citrixSupport="false"
-    loadWeight="1" sapSupport="false" standalone="false"
-    supportWANEmulation="false" uid="localhost" version="9.2.0;build=20230105-2">
+<lg-host browserBasedSupport="true" citrixSupport="false"
+    hostname="localhost:7100" loadWeight="1" sapSupport="true"
+    standalone="false" supportWANEmulation="false"
+    uid="6f46dc50-9012-4caf-bb39-50c4b8c1e026" version="9.2.0;build=20230105-2">
     <!--****** LG NETWORK INTERFACES ******-->
-    <lg-networkiface
-        description="Intel(R) Ethernet Connection (14) I219-LM"
-        enabled="false" isLoopBack="false" name="eth6">
-        <!--****** LG ADDRESSES ******-->
-        <lg-address enabled="false" hostname="tri-nb2386.intranet.neotys.com">
-            <ip value="192.168.1.92"/>
-        </lg-address>
-        <lg-address enabled="false" hostname="2a01:e0a:a38:4d70:3c72:7a45:5698:6d92">
-            <ip value="2a01:e0a:a38:4d70:3c72:7a45:5698:6d92"/>
-        </lg-address>
-        <lg-address enabled="false" hostname="2a01:e0a:a38:4d70:9550:3688:2c9e:128d">
-            <ip value="2a01:e0a:a38:4d70:9550:3688:2c9e:128d"/>
-        </lg-address>
-        <lg-address enabled="false" hostname="fe80:0:0:0:d971:d415:637e:84e8%eth6">
-            <ip value="fe80:0:0:0:d971:d415:637e:84e8%eth6"/>
-        </lg-address>
-        <!--****** END LG ADDRESSES ******-->
-    </lg-networkiface>
-    <lg-networkiface description="Hyper-V Virtual Ethernet Adapter #4"
-        enabled="false" isLoopBack="false" name="eth42">
-        <!--****** LG ADDRESSES ******-->
-        <lg-address enabled="false" hostname="tri-nb2386.mshome.net">
-            <ip value="172.22.32.1"/>
-        </lg-address>
-        <lg-address enabled="false" hostname="fe80:0:0:0:f799:4118:d714:ed4f%eth42">
-            <ip value="fe80:0:0:0:f799:4118:d714:ed4f%eth42"/>
-        </lg-address>
-        <!--****** END LG ADDRESSES ******-->
-    </lg-networkiface>
     <lg-networkiface description="Software Loopback Interface 1"
         enabled="false" isLoopBack="true" name="lo">
         <!--****** LG ADDRESSES ******-->
-        <lg-address enabled="false" hostname="kubernetes.docker.internal">
+        <lg-address enabled="false" hostname="127.0.0.1">
             <ip value="127.0.0.1"/>
         </lg-address>
         <lg-address enabled="false" hostname="0:0:0:0:0:0:0:1">
@@ -81,6 +53,35 @@
         </lg-address>
         <!--****** END LG ADDRESSES ******-->
     </lg-networkiface>
+    <lg-networkiface
+        description="Intel(R) Ethernet Connection (14) I219-LM"
+        enabled="false" isLoopBack="false" name="eth6">
+        <!--****** LG ADDRESSES ******-->
+        <lg-address enabled="false" hostname="tri-nb2386.intranet.neotys.com">
+            <ip value="192.168.1.92"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="2a01:e0a:a38:4d70:3c72:7a45:5698:6d92">
+            <ip value="2a01:e0a:a38:4d70:3c72:7a45:5698:6d92"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="2a01:e0a:a38:4d70:9550:3688:2c9e:128d">
+            <ip value="2a01:e0a:a38:4d70:9550:3688:2c9e:128d"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="fe80:0:0:0:d971:d415:637e:84e8%eth6">
+            <ip value="fe80:0:0:0:d971:d415:637e:84e8%eth6"/>
+        </lg-address>
+        <!--****** END LG ADDRESSES ******-->
+    </lg-networkiface>
+    <lg-networkiface description="Hyper-V Virtual Ethernet Adapter #4"
+        enabled="false" isLoopBack="false" name="eth42">
+        <!--****** LG ADDRESSES ******-->
+        <lg-address enabled="false" hostname="tri-nb2386.mshome.net">
+            <ip value="172.22.32.1"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="fe80:0:0:0:f799:4118:d714:ed4f%eth42">
+            <ip value="fe80:0:0:0:f799:4118:d714:ed4f%eth42"/>
+        </lg-address>
+        <!--****** END LG ADDRESSES ******-->
+    </lg-networkiface>
     <lg-networkiface description="Hyper-V Virtual Ethernet Adapter #3"
         enabled="false" isLoopBack="false" name="eth35">
         <!--****** LG ADDRESSES ******-->
@@ -92,4 +93,4 @@
         </lg-address>
         <!--****** END LG ADDRESSES ******-->
     </lg-networkiface>
-</me-host>
+</lg-host>
